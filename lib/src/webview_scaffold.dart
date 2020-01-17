@@ -144,12 +144,12 @@ class _WebviewScaffoldState extends State<WebviewScaffold> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: widget.appBar,
-      resizeToAvoidBottomInset: widget.resizeToAvoidBottomInset,
-      persistentFooterButtons: widget.persistentFooterButtons,
-      bottomNavigationBar: widget.bottomNavigationBar,
-      body: _WebviewPlaceholder(
+    return Container(
+//       appBar: widget.appBar,
+//       resizeToAvoidBottomInset: widget.resizeToAvoidBottomInset,
+//       persistentFooterButtons: widget.persistentFooterButtons,
+//       bottomNavigationBar: widget.bottomNavigationBar,
+      child: _WebviewPlaceholder(
         onRectChanged: (Rect value) {
           if (_rect == null) {
             _rect = value;
